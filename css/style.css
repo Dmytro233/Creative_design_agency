@@ -230,7 +230,7 @@ li {
     padding-bottom: 120px;
 }
 
-.why-choose-us__title {
+.title {
     font-weight: 700;
     font-size: 35px;
     text-transform: uppercase;
@@ -245,38 +245,38 @@ li {
     color: #009dda;
 }
 
-.why-choose-us__text {
+.text {
     color: #999999;
     font-size: 14px;
     line-height: 24px;
     padding-bottom: 90px;
 }
 
-.why-choose-us__block {
+.block-choose-us {
     border: solid #ebebeb;
     position: relative;
 }
 
 
-.why-choose-us__block>i {
+.block-choose-us>i {
     padding: 40px 0;
     color: #503392;
 }
 
-.why-choose-us__h4 {
+.block-choose-us__h4 {
     font-family: 'Lato Heavy';
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.why-choose-us__p {
+.block-choose-us__p {
     font-family: 'Lato Regular';
     color: #999999;
     font-size: 14px;
     line-height: 20px;
 }
 
-.see-more {
+.block-choose-us__see-more {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -290,32 +290,32 @@ li {
     transition: all 0.25s;
 }
 
-.why-choose-us__block:hover .see-more {
+.block-choose-us:hover .block-choose-us__see-more {
     opacity: 1;
 }
 
 
-.see-more__button {
+.block-choose-us__button {
     background: transparent;
     border: solid 1px white;
     border-radius: 50%;
 }
 
-.see-more__button:hover {
+.block-choose-us__button:hover {
     background-color: white;
     border: solid 1px white;
     border-radius: 50%;
 }
 
-.see-more__button:hover .fa-link {
+.block-choose-us__button:hover .fa-link {
     color: #503392;
 }
 
-.see-more__button:hover .fa-search-plus {
+.block-choose-us__button:hover .fa-search-plus {
     color: #503392;
 }
 
-.see-more__text {
+.block-choose-us__text {
     font-family: 'Lato Regular';
     font-weight: 700;
     color: white;
@@ -346,12 +346,10 @@ li {
     padding-bottom: 70px;
 }
 
-.our-products__title {
-    font-weight: 700;
-    font-size: 35px;
+.our-products h2 {
+    padding-bottom: 0;
+    margin-bottom: 200px;
     text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 200px;
 }
 
 .our {
@@ -362,23 +360,23 @@ li {
     color: #ffff00;
 }
 
-.our-products__block {
+.block-products {
     margin-bottom: 100px;
 }
 
-.our-products__h3 {
+.block-products__h3 {
     font-family: 'Lato Heavy';
     color: #232323;
     font-size: 24px;
     text-transform: uppercase;
 }
 
-.our-products__h5 {
+.block-products__h5 {
     color: #503392;
     font-size: 16px;
 }
 
-.our-products__p {
+.block-products__p {
     font-family: 'Lato Regular';
     color: #999999;
     font-size: 14px;
@@ -390,15 +388,11 @@ li {
 .footer {
     background: #fff;
     font-family: 'Lato Regular';
-    text-align: center;
     padding-top: 110px;
 }
 
-.footer__title {
-    font-weight: 700;
-    font-size: 35px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
+.footer>div {
+    text-align: center;
 }
 
 .get {
@@ -407,13 +401,6 @@ li {
 
 .touch {
     color: #009dda;
-}
-
-.footer__text {
-    color: #999999;
-    font-size: 14px;
-    line-height: 24px;
-    padding-bottom: 90px;
 }
 
 .map-block {
@@ -429,15 +416,20 @@ li {
     top: 0;
 }
 
-.footer__form {
+.no-gutter [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.form {
     background: rgba(0, 0, 0, .5);
     padding: 85px 0;
     position: relative;
 }
 
-.footer__send-form .full-name,
-.footer__send-form .email,
-.footer__send-form .message {
+.form__send-form .full-name,
+.form__send-form .email,
+.form__send-form .message {
     width: 100%;
     background: transparent;
     border: solid 0.5px #b7b7b7;
@@ -446,25 +438,22 @@ li {
     color: #b7b7b7;
 }
 
-.footer__send-form .full-name::placeholder,
-.footer__send-form .email::placeholder,
-.footer__send-form .message::placeholder {
+.form__send-form .full-name::placeholder,
+.form__send-form .email::placeholder,
+.form__send-form .message::placeholder {
     font-family: 'Lato Regular';
     font-size: 16px;
     color: #b7b7b7;
 }
 
-.footer__send-form .message {
-    margin-top: 15px;
-}
-
-.footer__send-form .checkbox {
+.form__send-form .checkbox {
     font-family: 'Lato Regular';
     font-size: 16px;
     color: #b7b7b7;
+    margin-bottom: 0;
 }
 
-.footer__send-form .button {
+.form__send-form .button {
     font-family: 'Lato Regular';
     font-size: 16px;
     height: 50px;
@@ -473,11 +462,14 @@ li {
     border: none;
 }
 
-.footer__our-contacts p {
+
+.form__our-contacts p {
     font-family: 'Lato Regular';
     font-size: 16px;
     color: #f3f3f3;
 }
+
+
 
 .footer__bottom {
     background-color: #1a1a1a;
@@ -581,5 +573,9 @@ li {
 
     .footer__send-form {
         margin-bottom: 20px;
+    }
+
+    .footer__our-contacts {
+        text-align: center;
     }
 }
